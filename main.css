@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  height: 40px;
+  font-size: 0.9rem;
+}
+
+.header div {
+  color: white;
+  flex-grow: 1;
+}
+
+.header-3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header .header-8 {
+  flex-grow: 3;
+}
+
+p {
+  position: relative;
+  top: 41px;
+}
+
+.header-3 .header-3-a {
+  flex-grow: 1;
+}
+
+.header-3 .header-3-b {
+  flex-grow: 4;
+}
