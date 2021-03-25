@@ -3,11 +3,14 @@
   box-sizing: border-box;
 }
 
+a {
+  color: white;
+  text-decoration: none;
+}
+
 .header {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -21,9 +24,25 @@
   flex-grow: 1;
 }
 
-.header-3 {
+.header-2 {
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding-left: 20px;
+}
+
+.header-1,
+.header-2,
+.header-3,
+.header-4,
+.header-5,
+.header-6,
+.header-7,
+.header-9 {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header .header-8 {
@@ -35,10 +54,47 @@ p {
   top: 41px;
 }
 
-.header-3 .header-3-a {
+.header-2 .header-2-a,
+.header-3 .header-3-a,
+.header-4 .header-4-a,
+.header-5 .header-5-a,
+.header-9 .header-9-a {
   flex-grow: 1;
 }
 
-.header-3 .header-3-b {
+.header-2 .header-2-b,
+.header-3 .header-3-b,
+.header-4 .header-4-b,
+.header-5 .header-5-b,
+.header-9 .header-9-b {
   flex-grow: 4;
+}
+
+a:hover {
+  color: grey;
+}
+
+.vrh {
+  display: flex;
+  top: 41px;
+  position: relative;
+  margin-left: 90px;
+  margin-right: 90px;
+  height: 130px;
+}
+
+.vrh-1 {
+  background-color: red;
+  flex-basis: 45%;
+  align-items: center;
+  display: flex;
+}
+
+.vrh-2 {
+  background-color: green;
+  flex-grow: 5;
+}
+.vrh-3 {
+  background-color: blue;
+  flex-grow: 2;
 }
