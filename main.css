@@ -3,9 +3,56 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
 a {
-  color: white;
   text-decoration: none;
+}
+
+.header a {
+  color: white;
+}
+
+.vrh-3 a,
+.vrh-2 a {
+  color: black;
+}
+
+.vrh-2 a:hover {
+  color: #29aae1;
+}
+
+.vrh-2 form {
+  /* This bit sets up the horizontal layout */
+  display: flex;
+  flex-direction: row;
+  /* This bit draws the box around it */
+  border-bottom: 1px solid #b1acac;
+  padding: 2px;
+  height: 50px;
+}
+
+.vrh-2 input {
+  /* Tell the input to use all the available space */
+  flex-grow: 2;
+  /* And hide the input's outline, so the form looks like the outline */
+  border: none;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #7f7f7f;
+  padding-left: 5px;
+}
+
+.vrh-2 input:focus {
+  background-color: #f8f6f6;
+  outline: none;
+}
+
+.vrh-2-1 button {
+  border: none;
+  background-color: white;
 }
 
 .header {
@@ -93,8 +140,23 @@ a:hover {
 .vrh-2 {
   background-color: green;
   flex-grow: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .vrh-3 {
   background-color: blue;
   flex-grow: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vrh-2-2 {
+  display: flex;
+}
+
+.vrh-2-2 > div {
+  flex-grow: 1;
+  font-weight: 600;
 }
