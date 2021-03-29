@@ -63,7 +63,7 @@ a {
   width: 100%;
   background-color: black;
   height: 40px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .header div {
@@ -131,21 +131,18 @@ a:hover {
 }
 
 .vrh-1 {
-  background-color: red;
   flex-basis: 45%;
   align-items: center;
   display: flex;
 }
 
 .vrh-2 {
-  background-color: green;
   flex-grow: 5;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
 .vrh-3 {
-  background-color: blue;
   flex-grow: 2;
   display: flex;
   justify-content: center;
@@ -158,5 +155,55 @@ a:hover {
 
 .vrh-2-2 > div {
   flex-grow: 1;
-  font-weight: 600;
+  font-weight: bold;
+}
+
+.image-1 {
+  position: relative;
+  top: 41px;
+  width: 100%;
+  height: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.vrh-2-2-1:hover .dropdown-content {
+  display: block;
+}
+
+.main-1 {
+  position: relative;
+  top: 41px;
+  display: flex;
+  height: 130px;
+  margin: 10px 10px;
+}
+
+.main-1-1,
+.main-1-2,
+.main-1-3,
+.main-1-4 {
+  flex-grow: 1;
+}
+
+.main-1-1 {
+  background-image: url("./images/Konzole.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
